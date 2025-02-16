@@ -7,6 +7,7 @@ public class GestorSalida {
 
     public void mostrarMenu() {
         System.out.println("1. Agregar estudiante");
+        System.out.println("2. Eliminar estudiante");
         System.out.println("5. Salir");
     }
 
@@ -32,5 +33,25 @@ public class GestorSalida {
 
     public void mostrarMensajeAltaExitosa() {
         System.out.println("Estudiante agregado exitosamente.");
+    }
+
+    public void mostrarMensajeSinEstudiantes() {
+        System.out.println("No hay estudiantes en el sistema.");
+    }
+
+    public void mostrarMensajeBajaExitosa() {
+        System.out.println("Estudiante eliminado exitosamente.");
+    }
+
+    public void mostrarMensajeNoSeEncontroId(int id) {
+        System.out.println("No se encontró el estudiante con ID: " + id);
+    }
+
+    public void mostrarListaEstudiantes() {
+        System.out.println("Lista de Estudiantes:");
+    }
+
+    public void mostrarEstudiante(String estudianteInfo) {
+        System.out.println(estudianteInfo);
     }
 }

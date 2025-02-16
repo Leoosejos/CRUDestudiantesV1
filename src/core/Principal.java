@@ -19,6 +19,9 @@ public class Principal {
                 case 1:
                     gestor.agregarEstudiante();
                     break;
+                case 2:
+                    gestor.eliminarEstudiante();
+                    break;
                 case 5:
                     ejecutando = false;
                     System.out.println("¡Gracias por usar el sistema!");
@@ -29,5 +32,3 @@ public class Principal {
         }
     }
 }
-
-
