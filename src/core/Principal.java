@@ -22,6 +22,9 @@ public class Principal {
                 case 2:
                     gestor.eliminarEstudiante();
                     break;
+                case 3:
+                    gestor.modificarNota();
+                    break;
                 case 4:
                     gestor.listarEstudiantes();
                     break;

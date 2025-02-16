@@ -12,6 +12,7 @@ public class GestorSalida {
     public void mostrarMenu() {
         System.out.println("1. Agregar estudiante");
         System.out.println("2. Eliminar estudiante");
+        System.out.println("3. Modificar nota");
         System.out.println("4. Listar estudiantes");
         System.out.println("5. Salir");
     }
@@ -70,4 +71,17 @@ public class GestorSalida {
                     " - Nota: " + estudiante.getAsignaturas()[i].getNota());
         }
     }
+
+    public void mostrarMensajeModificacionExitosa() {
+        System.out.println("Nota modificada exitosamente.");
+    }
+
+    public void mostrarMensajeAsignaturaNoValida() {
+        System.out.println("Número de asignatura no válido.");
+    }
+
+    public void mostrarMensajeNoSeEncontroId() {
+        System.out.println("No se encontró el estudiante con el ID especificado.");
+    }
+
 }

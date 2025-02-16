@@ -5,6 +5,7 @@ import core.salida.GestorSalida;
 import altas.Altas;
 import bajas.Bajas;
 import lista.Listado;
+import modificacion.Modificacion;
 import java.util.ArrayList;
 
 public class GestorEstudiantes {
@@ -14,6 +15,7 @@ public class GestorEstudiantes {
     private Altas altas;
     private Bajas bajas;
     private Listado listado;
+    private Modificacion modificacion;
 
     public GestorEstudiantes() {
         estudiantes = new ArrayList<>();
@@ -22,6 +24,7 @@ public class GestorEstudiantes {
         altas = new Altas(entrada, salida, estudiantes);
         bajas = new Bajas(entrada, salida, estudiantes);
         listado = new Listado(salida, estudiantes);
+        modificacion = new Modificacion(entrada, salida, estudiantes);
     }
 
     public void agregarEstudiante() {
@@ -34,5 +37,9 @@ public class GestorEstudiantes {
 
     public void listarEstudiantes() {
         listado.listarEstudiantes();
+    }
+
+    public void modificarNota() {
+        modificacion.modificarNota();
     }
 }
